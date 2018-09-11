@@ -1,6 +1,4 @@
 base:
-  'minion*':
-    - mysql
   'web*':
     - nginx
   'db*':

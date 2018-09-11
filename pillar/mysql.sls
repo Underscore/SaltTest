@@ -1,3 +1,5 @@
+#!yaml|gpg
+
 mysql:
   root:
     name: root
