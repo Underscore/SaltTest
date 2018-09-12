@@ -18,7 +18,7 @@ mysql:
       =8QaI
       -----END PGP MESSAGE-----
   database:
-    eski:
+    wordpress:
       host: localhost
     internal:
       host: localhost

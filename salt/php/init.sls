@@ -1,8 +1,6 @@
-include:
-  - php.php
-  - php.mod-curl
-  - php.mod-gd
-  - php.mod-mbstring
-  - php.mod-mysql
-  - php.mod-xml
-  - php.mod-xmlrpc
+php:
+  pkg.installed: []
+  service.running:
+    - require:
+      - pkg: php
+      - pkg: php-mysql
