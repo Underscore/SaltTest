@@ -7,7 +7,7 @@ nginx:
 web-conf:
   file.managed:
     - source: salt://nginx/files/wordpress
-    - name: /etc/nginx/site-available/wordpress
+    - name: /etc/nginx/sites-available/wordpress
     - user: root
     - mode: 644
   cmd.run:
