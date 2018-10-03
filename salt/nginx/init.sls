@@ -6,7 +6,9 @@ nginx:
 
 web-conf:
   file.managed:
-    - source: salt://nginx/files/nginx.conf
-    - name: /etc/nginx/conf.d/bryce.conf
+    - source: salt://nginx/files/wordpress
+    - name: /etc/nginx/site-available/wordpress
     - user: root
     - mode: 644
+  cmd.run:
+    - name: sudo ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/wordpress
